@@ -1,0 +1,66 @@
+/* Основной стиль для body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121312; /* Тёмный фон */
+    color: #ffcb9a; /* Цвет текста по умолчанию */
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+/* Навигационная панель */
+nav {
+    background-color: #992686; /* Чёрный фон навигации */
+    padding: 20px 0; /* Отступы сверху и снизу */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* Стили для списка навигации */
+nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex; /* Горизонтальное расположение */
+}
+
+/* Элементы списка навигации */
+nav li {
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Ссылки навигации */
+nav a {
+    color: white; /* Цвет текста "слоновая кость" */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 20px; /* Увеличиваем отступы для овальной формы */
+    position: relative;
+    background-color: #992686; /* Чёрная заливка фона внутри обводки */
+    border-radius: 30px; /* Большой радиус для овальной формы */
+    transition: color 0.3s;
+    z-index: 1; /* Поверх псевдоэлементов */
+    /* Вместо фиксированной ширины */
+    max-width: 100%; /* или конкретное значение, например, 150px */
+    width: auto; /* позволяет гибко подстраиваться под контент */
+}
+
+
+.active {
+    color: rgb(228, 224, 18);
+}
+
+
+
+
+
+

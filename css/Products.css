@@ -1,0 +1,29 @@
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.products-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.products-element__img{
+    width: 100%;
+    height: 270px;
+    object-fit: contain;
+
+}
+
+.btn-purple {
+    background-color: #992686;
+    color: white;                /* Цвет текста на кнопке */
+}
+
+.btn-purple:hover {
+    background-color: #5a2277;   /* Темнее при наведении */
+    color: white;  
+
+}  
